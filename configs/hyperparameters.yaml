@@ -1,0 +1,11 @@
+# hyperparameters.yaml
+
+learning_rate: 0.001
+batch_size: 64
+num_epochs: 50
+optimizer: Adam
+weight_decay: 1e-4
+
+scheduler:
+  step_size: 20
+  gamma: 0.1

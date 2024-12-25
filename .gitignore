@@ -1,0 +1,18 @@
+# 忽略模型权重文件
+*.pth
+
+# 忽略日志文件
+*.log
+
+# 忽略数据目录
+data/
+
+# 忽略 TensorBoard 运行日志
+runs/
+
+# 忽略 Python 缓存文件
+__pycache__/
+*.pyc
+
+# 忽略其他不需要的临时文件
+*.tmp

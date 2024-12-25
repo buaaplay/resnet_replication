@@ -1,0 +1,33 @@
+experiment:
+  name: "experiment"  
+
+dataset:
+  name: CIFAR100
+  path: data/processed/
+  num_classes: 100
+  image_size: 224
+
+model:
+  architecture: resnet50
+  pretrained: True
+  num_classes: 10
+
+training:
+  batch_size: 64
+  num_epochs: 25
+  learning_rate: 0.001
+  optimizer: Adam
+  weight_decay: 1e-4
+  scheduler: StepLR
+  step_size: 20
+  gamma: 0.1
+  early_stopping:
+    patience: 5
+    delta: 0.0001
+
+evaluation:
+  batch_size: 64
+
+logging:
+  log_dir: models/logs/
+  checkpoint_dir: models/checkpoints/
